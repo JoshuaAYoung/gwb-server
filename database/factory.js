@@ -1,21 +1,96 @@
-'use strict'
+"use strict";
 
-/*
-|--------------------------------------------------------------------------
-| Factory
-|--------------------------------------------------------------------------
-|
-| Factories are used to define blueprints for database tables or Lucid
-| models. Later you can use these blueprints to seed your database
-| with dummy data.
-|
-*/
+const Factory = use("Factory");
+const Hash = use("Hash");
 
-/** @type {import('@adonisjs/lucid/src/Factory')} */
-// const Factory = use('Factory')
-
-// Factory.blueprint('App/Models/User', (faker) => {
-//   return {
-//     username: faker.username()
-//   }
-// })
+Factory.blueprint("App/Models/Paint", (faker, i, data) => {
+  return {
+    type: [
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "SMP",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+      "Kynar",
+    ][i],
+    name: [
+      "Polar White PPOL",
+      "Light Stone",
+      "Ash Gray",
+      "Desert Sand",
+      "Charcoal Gray",
+      "Burnished Slate",
+      "Saddle Tan",
+      "Hawaiian Blue",
+      "Rustic Red",
+      "Fern Green",
+      "Solar White",
+      "Koko Brown",
+      "Evergreen",
+      "Aztec Gold",
+      "Crimson Red",
+      "Colony Green",
+      "Regal Red",
+      "Gallery Blue",
+      "Medium Bronze",
+      "Snow White",
+      "Slate Gray",
+      "Almond",
+      "Classic Green",
+      "Brownstone",
+      "Colonial Red",
+      "Bone White",
+      "Midnight Bronze",
+    ][i],
+    hex_code: [
+      "#FFFFFF",
+      "#CCCCB2",
+      "#C1C5C8",
+      "#AA9880",
+      "#615B5D",
+      "#4E4741",
+      "#AD946C",
+      "#4B7792",
+      "#8B4138",
+      "#35473B",
+      "#F3F9F5",
+      "#63463E",
+      "#384F45",
+      "#C4BA73",
+      "#A22827",
+      "#757C50",
+      "#8F1C2B",
+      "#1F4A6A",
+      "#5A4C49",
+      "#FEFEF2",
+      "#7D777B",
+      "#EAEDD8",
+      "#354A43",
+      "#AAA389",
+      "#703D3A",
+      "#F5FBFB",
+      "#493B3A",
+    ][i],
+  };
+});
